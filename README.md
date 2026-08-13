@@ -1,19 +1,35 @@
 # Smart Insurance — GitHub Pages Website
 
-Premium Smart Insurance website built for GitHub Pages.
+A premium one-page website for Smart Insurance, designed around the navy + teal brand identity.
 
-## Current features
-- Premium navy / teal / white visual system preserved
-- Animated hero shield, orbit labels, glow effects, reveal animations and marquee
-- Health, Life, Motor and Accident Insurance categories
-- Click any category to open an animated detail panel
-- Overview / Benefits / FAQ tabs for every category
-- Video-ready resource area and category video placeholder
-- WhatsApp enquiry form connected to +91 79908 67269
-- Floating WhatsApp button
-- Instagram link: @smartinsuranceindia
-- Transparent logo asset
-- Responsive mobile navigation and layouts
+## Included
+- Responsive mobile/desktop design
+- Animated hero section
+- Shield/checkmark visual
+- Scroll reveal animations
+- Animated service marquee
+- Interactive service cards
+- Process timeline
+- Contact/enquiry form
+- WhatsApp floating button
+- Mobile navigation
+- Existing Smart Insurance logo in `assets/`
+
+## Before publishing
+Open `script.js` and replace:
+
+`91XXXXXXXXXX`
+
+with the WhatsApp business number you want customers to use.
+
+The contact form currently prepares a WhatsApp enquiry. No customer data is sent anywhere until you connect a number or form provider.
 
 ## GitHub Pages
-Upload the contents of this folder to the repository root. Keep `index.html`, `styles.css`, `script.js` and the `assets` folder together.
+1. Create a new GitHub repository, for example `smart-insurance`.
+2. Upload `index.html`, `styles.css`, `script.js`, `README.md`, and the `assets` folder.
+3. Open repository **Settings → Pages**.
+4. Under **Build and deployment**, choose **Deploy from a branch**.
+5. Select `main` and `/ (root)`, then Save.
+6. GitHub will provide your live `.github.io` address.
+
+You can connect a custom domain later.

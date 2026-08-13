@@ -116,3 +116,16 @@ h1 em,h2 em{font-style:normal;color:var(--teal)}
 @media(max-width:1100px){.solution-grid-four{grid-template-columns:repeat(2,1fr)}.resource-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:900px){.solution-grid-four{grid-template-columns:1fr 1fr}.resource-grid{grid-template-columns:1fr}.detail-panel{width:100%;padding:65px 30px 35px}}
 @media(max-width:560px){.solution-grid-four{grid-template-columns:1fr}.detail-panel{padding:62px 20px 30px}.detail-tabs{width:100%;justify-content:space-between}.detail-tabs button{flex:1;padding:10px 8px}.detail-video{grid-template-columns:1fr}.video-placeholder{height:145px}.social-links{margin-bottom:25px}}
+
+
+/* ===== SOCIAL + BRAND FIXES ===== */
+.brand img{background:transparent !important;border-radius:0 !important;object-fit:contain}
+.footer-brand img{width:150px;height:auto;border-radius:0 !important;background:transparent !important}
+.social-links a{font-size:0 !important}
+.social-links a svg{width:19px;height:19px;display:block;fill:currentColor}
+.social-links a:nth-child(2) svg{fill:none;stroke:currentColor;stroke-width:2}
+.social-links a:nth-child(2) svg .ig-dot{fill:currentColor;stroke:none}
+.whatsapp-float{display:grid !important;place-items:center !important}
+.whatsapp-float svg{width:31px;height:31px;fill:#fff;display:block}
+.orbit-4{right:10px;bottom:54px}
+@media(max-width:900px){.orbit-4{right:4px;bottom:40px}}

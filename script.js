@@ -1,5 +1,5 @@
 const WHATSAPP_NUMBER = "917990867269";
-const INSTAGRAM_URL = "https://www.instagram.com/smartinsuranceindia/";
+const INSTAGRAM_URL = "https://www.instagram.com/smartinsurance.india/";
 
 const cursor = document.querySelector(".cursor-glow");
 if (cursor && window.matchMedia("(pointer:fine)").matches) {
@@ -127,7 +127,7 @@ document.querySelectorAll("[data-close-modal]").forEach(el => el.addEventListene
 document.addEventListener("keydown", e => { if (e.key === "Escape") closeModal(); });
 function closeModal() { modal.classList.remove("open"); modal.setAttribute("aria-hidden","true"); document.body.classList.remove("modal-open"); }
 
-document.getElementById("detailQuote").addEventListener("click", () => setTimeout(() => document.querySelector('#contact input[name="name"]')?.focus(), 250));
+document.getElementById("detailQuote")?.addEventListener("click", () => { closeModal(); setTimeout(() => document.querySelector('#contact input[name="name"]')?.focus(), 250); });
 
 document.getElementById("quoteForm").addEventListener("submit", e => {
   e.preventDefault();
@@ -139,6 +139,4 @@ document.getElementById("quoteForm").addEventListener("submit", e => {
   window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, "_blank", "noopener");
 });
 
-document.querySelector(".whatsapp-float")?.addEventListener("click", () => {});
 
-document.querySelectorAll('a[href="https://www.instagram.com/smartinsuranceindia/"]').forEach(a => a.href = INSTAGRAM_URL);
