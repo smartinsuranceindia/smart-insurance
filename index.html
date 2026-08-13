@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#061a3a" />
-  <meta name="description" content="Smart Insurance — simple guidance for Health, Life and Motor Insurance in India." />
+  <meta name="description" content="Smart Insurance — simple guidance for Health, Life, Motor and Accident Insurance in India." />
   <title>Smart Insurance | Smart Choices. Better Protection.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
 
   <header class="site-header" id="top">
     <a class="brand" href="#top" aria-label="Smart Insurance home">
-      <img src="smart-insurance-logo.png" alt="Smart Insurance logo">
+      <img src="assets/smart-insurance-logo-transparent.png" alt="Smart Insurance logo">
     </a>
 
     <nav class="desktop-nav" aria-label="Primary navigation">
@@ -28,9 +28,7 @@
     </nav>
 
     <a class="nav-cta magnetic" href="#contact">Talk to Us <span>↗</span></a>
-    <button class="menu-btn" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span>
-    </button>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
   </header>
 
   <div class="mobile-menu">
@@ -50,33 +48,25 @@
       <div class="hero-content reveal">
         <div class="eyebrow"><span class="pulse-dot"></span> Insurance, made easier</div>
         <h1>Protect what matters.<br><em>Choose smarter.</em></h1>
-        <p class="hero-copy">
-          Clear guidance for Health, Life and Motor Insurance — without the confusing jargon.
-        </p>
+        <p class="hero-copy">Clear guidance for Health, Life, Motor and Accident Insurance — without the confusing jargon.</p>
         <div class="hero-actions">
           <a class="btn btn-primary magnetic" href="#contact">Get Started <span>→</span></a>
           <a class="btn btn-ghost" href="#solutions">Explore Solutions <span>↓</span></a>
         </div>
         <div class="trust-strip">
-          <span>🇮🇳 Serving India</span>
-          <i></i>
-          <span>Simple guidance</span>
-          <i></i>
-          <span>Personal assistance</span>
+          <span>🇮🇳 Serving India</span><i></i><span>Simple guidance</span><i></i><span>Personal assistance</span>
         </div>
       </div>
 
       <div class="hero-visual reveal delay-2" aria-hidden="true">
-        <div class="halo halo-1"></div>
-        <div class="halo halo-2"></div>
+        <div class="halo halo-1"></div><div class="halo halo-2"></div>
         <div class="shield-card">
           <div class="shield-ring"></div>
-          <div class="shield">
-            <div class="shield-check"></div>
-          </div>
+          <div class="shield"><div class="shield-check"></div></div>
           <span class="orbit orbit-1">HEALTH</span>
           <span class="orbit orbit-2">LIFE</span>
           <span class="orbit orbit-3">MOTOR</span>
+          <span class="orbit orbit-4">ACCIDENT</span>
           <div class="floating-badge badge-top">✓ Verified guidance</div>
           <div class="floating-badge badge-bottom">SMART CHOICE</div>
         </div>
@@ -86,45 +76,45 @@
     </section>
 
     <section class="marquee-section" aria-label="Services">
-      <div class="marquee">
-        <div class="marquee-track">
-          <span>HEALTH</span><b>✦</b><span>LIFE</span><b>✦</b><span>MOTOR</span><b>✦</b>
-          <span>HEALTH</span><b>✦</b><span>LIFE</span><b>✦</b><span>MOTOR</span><b>✦</b>
-          <span>HEALTH</span><b>✦</b><span>LIFE</span><b>✦</b><span>MOTOR</span><b>✦</b>
-        </div>
-      </div>
+      <div class="marquee"><div class="marquee-track">
+        <span>HEALTH</span><b>✦</b><span>LIFE</span><b>✦</b><span>MOTOR</span><b>✦</b><span>ACCIDENT</span><b>✦</b>
+        <span>HEALTH</span><b>✦</b><span>LIFE</span><b>✦</b><span>MOTOR</span><b>✦</b><span>ACCIDENT</span><b>✦</b>
+        <span>HEALTH</span><b>✦</b><span>LIFE</span><b>✦</b><span>MOTOR</span><b>✦</b><span>ACCIDENT</span><b>✦</b>
+      </div></div>
     </section>
 
     <section class="section solutions" id="solutions">
       <div class="section-heading reveal">
         <div class="eyebrow">01 / WHAT WE HELP WITH</div>
         <h2>Protection for<br><em>real life.</em></h2>
-        <p>Start with what matters most to you. We'll help make the next step easier to understand.</p>
+        <p>Choose a category to explore what it covers, who it may suit, and the next step. More detailed content and videos can be added here anytime.</p>
       </div>
 
-      <div class="solution-grid">
-        <article class="solution-card health reveal">
+      <div class="solution-grid solution-grid-four">
+        <article class="solution-card health reveal" data-category="health" tabindex="0" role="button" aria-label="Explore Health Insurance">
           <div class="card-top"><span class="card-number">01</span><span class="card-arrow">↗</span></div>
-          <div class="line-icon heart-icon">♡</div>
-          <h3>Health Insurance</h3>
+          <div class="line-icon heart-icon">♡</div><h3>Health Insurance</h3>
           <p>Plan for medical expenses with coverage that fits your needs and budget.</p>
-          <a href="#contact">Explore health <span>→</span></a>
+          <button class="card-link" type="button">Explore health <span>→</span></button>
         </article>
-
-        <article class="solution-card life reveal delay-1">
+        <article class="solution-card life reveal delay-1" data-category="life" tabindex="0" role="button" aria-label="Explore Life Insurance">
           <div class="card-top"><span class="card-number">02</span><span class="card-arrow">↗</span></div>
-          <div class="line-icon">♧</div>
-          <h3>Life Insurance</h3>
+          <div class="line-icon">♧</div><h3>Life Insurance</h3>
           <p>Think long-term. Protect the people and plans that matter to you.</p>
-          <a href="#contact">Explore life <span>→</span></a>
+          <button class="card-link" type="button">Explore life <span>→</span></button>
         </article>
-
-        <article class="solution-card motor reveal delay-2">
+        <article class="solution-card motor reveal delay-2" data-category="motor" tabindex="0" role="button" aria-label="Explore Motor Insurance">
           <div class="card-top"><span class="card-number">03</span><span class="card-arrow">↗</span></div>
-          <div class="line-icon">⌁</div>
-          <h3>Motor Insurance</h3>
+          <div class="line-icon">⌁</div><h3>Motor Insurance</h3>
           <p>Get the right support for your car or two-wheeler insurance needs.</p>
-          <a href="#contact">Explore motor <span>→</span></a>
+          <button class="card-link" type="button">Explore motor <span>→</span></button>
+        </article>
+        <article class="solution-card accident reveal delay-3" data-category="accident" tabindex="0" role="button" aria-label="Explore Accident Insurance">
+          <div class="new-badge">NEW</div>
+          <div class="card-top"><span class="card-number">04</span><span class="card-arrow">↗</span></div>
+          <div class="line-icon">✦</div><h3>Accident Insurance</h3>
+          <p>Financial support when an unexpected accident changes the plan.</p>
+          <button class="card-link" type="button">Explore accident <span>→</span></button>
         </article>
       </div>
     </section>
@@ -134,119 +124,96 @@
       <div class="statement reveal">
         <div class="eyebrow">02 / WHY SMART INSURANCE</div>
         <h2>Insurance should feel<br><em>simple, not stressful.</em></h2>
-        <p>
-          We believe better insurance decisions start with better understanding.
-          Our approach is straightforward: listen to what you need, explain your options clearly,
-          and help you move forward with confidence.
-        </p>
+        <p>We believe better insurance decisions start with better understanding. Our approach is straightforward: listen to what you need, explain your options clearly, and help you move forward with confidence.</p>
       </div>
       <div class="stat-cards">
-        <div class="stat-card reveal"><strong data-count="3">0</strong><span>Core insurance<br>categories</span></div>
+        <div class="stat-card reveal"><strong data-count="4">0</strong><span>Insurance<br>categories</span></div>
         <div class="stat-card reveal delay-1"><strong>24/7</strong><span>Digital enquiry<br>access</span></div>
         <div class="stat-card reveal delay-2"><strong>1:1</strong><span>Personal<br>assistance</span></div>
       </div>
     </section>
 
     <section class="section process" id="process">
-      <div class="section-heading centered reveal">
-        <div class="eyebrow">03 / HOW IT WORKS</div>
-        <h2>Four steps.<br><em>Zero guesswork.</em></h2>
-      </div>
-
+      <div class="section-heading centered reveal"><div class="eyebrow">03 / HOW IT WORKS</div><h2>Four steps.<br><em>Zero guesswork.</em></h2></div>
       <div class="process-line"></div>
       <div class="process-grid">
-        <div class="process-step reveal">
-          <span>01</span><div class="step-dot"></div>
-          <h3>Tell us</h3><p>Share what you want to protect and what you need.</p>
-        </div>
-        <div class="process-step reveal delay-1">
-          <span>02</span><div class="step-dot"></div>
-          <h3>Understand</h3><p>We help you understand the relevant options.</p>
-        </div>
-        <div class="process-step reveal delay-2">
-          <span>03</span><div class="step-dot"></div>
-          <h3>Choose</h3><p>Compare what fits your priorities and budget.</p>
-        </div>
-        <div class="process-step reveal delay-3">
-          <span>04</span><div class="step-dot"></div>
-          <h3>Move forward</h3><p>Take the next step with more confidence.</p>
-        </div>
+        <div class="process-step reveal"><span>01</span><div class="step-dot"></div><h3>Tell us</h3><p>Share what you want to protect and what you need.</p></div>
+        <div class="process-step reveal delay-1"><span>02</span><div class="step-dot"></div><h3>Understand</h3><p>We help you understand the relevant options.</p></div>
+        <div class="process-step reveal delay-2"><span>03</span><div class="step-dot"></div><h3>Choose</h3><p>Compare what fits your priorities and budget.</p></div>
+        <div class="process-step reveal delay-3"><span>04</span><div class="step-dot"></div><h3>Move forward</h3><p>Take the next step with more confidence.</p></div>
       </div>
     </section>
 
     <section class="section about" id="about">
-      <div class="about-visual reveal">
-        <div class="about-logo-wrap">
-          <img src="assets/smart-insurance-logo.png" alt="Smart Insurance">
-          <div class="rotating-text">SMART • SIMPLE • PROTECTED • SMART • SIMPLE • PROTECTED • </div>
-        </div>
-      </div>
+      <div class="about-visual reveal"><div class="about-logo-wrap"><img src="assets/smart-insurance-logo-transparent.png" alt="Smart Insurance"><div class="rotating-text">SMART • SIMPLE • PROTECTED • SMART • SIMPLE • PROTECTED • </div></div></div>
       <div class="about-copy reveal delay-1">
         <div class="eyebrow">04 / ABOUT SMART INSURANCE</div>
         <h2>A smarter way to approach <em>insurance.</em></h2>
-        <p>
-          Smart Insurance is built around one simple idea: insurance should be easier to understand.
-          We focus on practical guidance, clear communication and helping customers make informed choices.
-        </p>
-        <div class="mini-points">
-          <div><span>✓</span> Clear explanations</div>
-          <div><span>✓</span> Needs-first conversations</div>
-          <div><span>✓</span> Simple next steps</div>
-        </div>
+        <p>Smart Insurance is built around one simple idea: insurance should be easier to understand. We focus on practical guidance, clear communication and helping customers make informed choices.</p>
+        <div class="mini-points"><div><span>✓</span> Clear explanations</div><div><span>✓</span> Needs-first conversations</div><div><span>✓</span> Simple next steps</div></div>
+      </div>
+    </section>
+
+    <section class="section resources" id="resources">
+      <div class="section-heading reveal"><div class="eyebrow">05 / RESOURCES</div><h2>Learn before<br><em>you decide.</em></h2><p>This section is ready for videos, explainers, FAQs and useful insurance guides as we grow the website.</p></div>
+      <div class="resource-grid">
+        <article class="resource-card reveal"><div class="resource-icon">▶</div><div><span>VIDEO</span><h3>Why Insurance Matters</h3><p>Video library ready to be connected.</p></div></article>
+        <article class="resource-card reveal delay-1"><div class="resource-icon">?</div><div><span>GUIDE</span><h3>Insurance FAQs</h3><p>Simple answers to common questions.</p></div></article>
+        <article class="resource-card reveal delay-2"><div class="resource-icon">↗</div><div><span>COMING SOON</span><h3>Smart Insurance Tips</h3><p>Short, practical explainers for everyday decisions.</p></div></article>
       </div>
     </section>
 
     <section class="contact-section" id="contact">
       <div class="contact-glow"></div>
       <div class="contact-inner reveal">
-        <div class="eyebrow">05 / LET'S TALK</div>
+        <div class="eyebrow">06 / LET'S TALK</div>
         <h2>Ready to make a<br><em>smarter choice?</em></h2>
-        <p>Tell us what you're looking for and we'll get back to you.</p>
-
+        <p>Tell us what you're looking for and your enquiry will open directly in WhatsApp.</p>
         <form id="quoteForm" class="quote-form">
           <div class="field-row">
             <label><span>Name</span><input type="text" name="name" placeholder="Your name" required></label>
             <label><span>Phone</span><input type="tel" name="phone" placeholder="Your phone number" required></label>
           </div>
-          <label><span>I'm interested in</span>
-            <select name="insurance" required>
-              <option value="">Select a category</option>
-              <option>Health Insurance</option>
-              <option>Life Insurance</option>
-              <option>Motor Insurance</option>
-            </select>
-          </label>
+          <label><span>I'm interested in</span><select name="insurance" required><option value="">Select a category</option><option>Health Insurance</option><option>Life Insurance</option><option>Motor Insurance</option><option>Accident Insurance</option></select></label>
           <label><span>Message</span><textarea name="message" rows="3" placeholder="Tell us a little about what you need"></textarea></label>
-          <button class="btn btn-primary submit-btn" type="submit">Send Enquiry <span>→</span></button>
-          <small class="form-note">Your details stay private and are used only to respond to your enquiry.</small>
+          <button class="btn btn-primary submit-btn" type="submit">Send Enquiry on WhatsApp <span>→</span></button>
+          <small class="form-note">Your WhatsApp will open with the enquiry already prepared.</small>
         </form>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer-brand">
-      <img src="assets/smart-insurance-logo.png" alt="Smart Insurance">
-      <p>Smart choices. Better protection.</p>
+    <div class="footer-brand"><img src="assets/smart-insurance-logo-transparent.png" alt="Smart Insurance"><p>Smart choices. Better protection.</p></div>
+    <div class="footer-links"><a href="#solutions">Solutions</a><a href="#why-us">Why Smart</a><a href="#process">How It Works</a><a href="#resources">Resources</a><a href="#contact">Contact</a></div>
+    <div class="social-links" aria-label="Social links">
+      <a href="https://wa.me/917990867269" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+      <a href="https://www.instagram.com/smartinsuranceindia/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
     </div>
-    <div class="footer-links">
-      <a href="#solutions">Solutions</a>
-      <a href="#why-us">Why Smart</a>
-      <a href="#process">How It Works</a>
-      <a href="#contact">Contact</a>
-    </div>
-    <div class="footer-bottom">
-      <span>© <span id="year"></span> Smart Insurance. All rights reserved.</span>
-      <span>🇮🇳 Serving India</span>
-    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Smart Insurance. All rights reserved.</span><span>🇮🇳 Serving India</span></div>
   </footer>
 
-  <a class="whatsapp-float" href="https://wa.me/" aria-label="WhatsApp Smart Insurance" title="WhatsApp">
-    <span>◔</span>
-  </a>
+  <a class="whatsapp-float" href="https://wa.me/917990867269" target="_blank" rel="noopener" aria-label="WhatsApp Smart Insurance" title="Chat on WhatsApp"><span>◔</span></a>
 
-  <div class="toast" role="status" aria-live="polite">Enquiry prepared — connect your WhatsApp/email in <code>script.js</code>.</div>
+  <div class="detail-modal" id="detailModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="detail-panel" role="dialog" aria-modal="true" aria-labelledby="detailTitle">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close">×</button>
+      <div class="detail-kicker" id="detailKicker">SMART INSURANCE</div>
+      <h2 id="detailTitle">Health Insurance</h2>
+      <p class="detail-lead" id="detailLead"></p>
+      <div class="detail-tabs" role="tablist">
+        <button class="active" type="button" data-tab="overview">Overview</button>
+        <button type="button" data-tab="benefits">Benefits</button>
+        <button type="button" data-tab="faq">FAQ</button>
+      </div>
+      <div class="detail-body" id="detailBody"></div>
+      <div class="detail-actions"><a class="btn btn-primary" id="detailQuote" href="#contact" data-close-modal>Get a Quote <span>→</span></a><a class="btn btn-ghost" id="detailWhatsapp" href="https://wa.me/917990867269" target="_blank" rel="noopener">Chat on WhatsApp <span>↗</span></a></div>
+      <div class="detail-video"><div class="video-placeholder"><span>▶</span></div><div><span>VIDEO READY</span><h3 id="videoTitle">More videos can be added here</h3><p>When you have a video, we can plug it into this exact space without changing the design.</p></div></div>
+    </div>
+  </div>
 
+  <div class="toast" role="status" aria-live="polite"></div>
   <script src="script.js"></script>
 </body>
 </html>
